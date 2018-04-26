@@ -44,6 +44,38 @@
             android:launchMode="standard"
             android:screenOrientation="sensor" />
 
+
+
+        <activity
+            android:name=".vr250_example.DemoActivity"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".vr250_example.IjkPlayerDemoActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="IjkPlayerDemoActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".vr250_example.VideoPlayerActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="VideoPlayerActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".vr250_example.BitmapPlayerActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="BitmapPlayerActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".vr250_example.CubemapPlayerActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="CubemapPlayerActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".vr250_example.RecyclerViewActivity"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>

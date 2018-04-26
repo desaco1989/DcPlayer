@@ -10,19 +10,42 @@
         android:text="选择你要播放的视频类型："
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
     <Button
+        android:textColor="#CC56B4"
+        android:id="@+id/ijkPlayer_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="ijkPlayer点播视频" />
+
+
+    <Button
+        android:textColor="#CC56B4"
         android:id="@+id/common_video_bt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:text="普通视频页面跳转" />
+        android:text="普通视频页面跳转（混合）" />
 
     <Button
+        android:textColor="#CC56B4"
         android:id="@+id/vr_video_bt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:text="VR视频页面跳转" />
+        android:text="VR视频页面跳转（混合）" />
+
+    <Button
+        android:textColor="#CC56B4"
+        android:id="@+id/jump_vr250"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="VR2.5.0 sample跳转" />
+
 </LinearLayout>

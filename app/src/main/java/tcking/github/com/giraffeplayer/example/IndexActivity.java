@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import tcking.github.com.giraffeplayer.example.common_player.MainActivity;
+import tcking.github.com.giraffeplayer.example.vr250_example.DemoActivity;
 import tcking.github.com.giraffeplayer.example.vr_player.DcPlayerActivity;
 
 /**
@@ -27,6 +29,9 @@ public class IndexActivity extends Activity implements View.OnClickListener {
         commonVideoBt.setOnClickListener(this);
         Button vrVideoBt = (Button) findViewById(R.id.vr_video_bt);
         vrVideoBt.setOnClickListener(this);
+        //
+        Button vr250Bt = (Button) findViewById(R.id.jump_vr250);
+        vr250Bt.setOnClickListener(this);
     }
 
     @Override
@@ -85,8 +90,15 @@ public class IndexActivity extends Activity implements View.OnClickListener {
 //                vtIntent.setData(Uri.parse(url));
 //                startActivity(vtIntent);
                 break;
+            case R.id.jump_vr250:
+                Intent videoIntent = new Intent();
+                videoIntent.setClass(IndexActivity.this, DemoActivity.class);
+                startActivity(videoIntent);
+                break;
             default:
-
+                Intent intent = new Intent();
+                intent.setClass(IndexActivity.this,MainActivity.class);
+                startActivity(intent);
                 break;
         }
     }
