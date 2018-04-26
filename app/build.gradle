@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "tcking.github.com.giraffeplayer"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 110
+        versionName "1.1.0"
+
+        ndk {
+            abiFilters "armeabi","armeabi-v7a","arm64-v8a","x86","x86_64"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+//    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    testCompile 'junit:junit:4.12'
+//    ijkplayer lib
+//    compile project(':giraffeplayer')
+//    vr lib
+    compile project(':vrlib_2.5.0')
+//    compile project(':ijkplayer-java')
+
+    //VR lib,ijkplayer lib
+    compile(name:'giraffeplayer-v1.0', ext:'aar')
+    compile(name:'ijkplayer-java-v0.8.4', ext:'aar')
+//    compile(name:'vrlib-release-v2.5.0', ext:'aar')
+
+    //ijkplayer-player可以引用源码的arr包，也可以引用如下maven包
+//    compile 'tv.danmaku.ijk.media:ijkplayer-java:0.6.0'
+//    compile 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.6.0'
+
+}

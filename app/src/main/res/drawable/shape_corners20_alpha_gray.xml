@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 描边,边框的颜色和宽度     android:dashWidth="1dp"
+        android:dashGap="2dp "   android:color="@color/red_background_df3031"-->
+    <stroke
+        android:width="0.5dp"
+        android:color="@color/gray_alpha_7f404040" />
+    <!-- 圆角为3dp -->
+    <!-- 设置矩形的四个角为弧形  red_background_df3031-->
+    <!-- android:radius 弧形的半径 -->
+    <corners android:radius="20dp" />
+    <!-- 填充的颜色 控件内的颜色 android:shape="rectangle" <solid android:color="@color/color_d32f24" />  #00000000 -->
+    <solid android:color="@color/gray_alpha_7f404040"></solid>
+</shape> 

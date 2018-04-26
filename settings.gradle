@@ -1,0 +1,1 @@
+include ':app', ':giraffeplayer', ':ijkplayer-java',  ':vrlib_2.5.0'
