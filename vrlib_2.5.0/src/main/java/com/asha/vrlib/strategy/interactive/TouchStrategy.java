@@ -43,9 +43,9 @@ public class TouchStrategy extends AbsInteractiveStrategy {
 
     @Override
     public void turnOnInGL(Context context) {
-        for (MD360Director director : getDirectorList()){
-            director.reset();
-        }
+//        for (MD360Director director : getDirectorList()){//TODO
+//            director.reset();
+//        }
     }
 
     @Override

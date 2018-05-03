@@ -61,9 +61,9 @@ public class MotionStrategy extends AbsInteractiveStrategy implements SensorEven
     public void turnOnInGL(Context context) {
         isOn = true;
         windowManager = (WindowManager)context.getSystemService(Context.WINDOW_SERVICE);
-        for (MD360Director director : getDirectorList()){
-            director.reset();
-        }
+//        for (MD360Director director : getDirectorList()){//TODO
+//            director.reset();
+//        }
     }
 
     @Override
