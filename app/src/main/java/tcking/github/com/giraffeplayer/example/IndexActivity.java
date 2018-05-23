@@ -25,8 +25,11 @@ public class IndexActivity extends Activity implements View.OnClickListener {
     }
 
     private void initView() {
-        Button commonVideoBt = (Button) findViewById(R.id.common_video_bt);
+        Button ijkPlayerBt = (Button) findViewById(R.id.ijkPlayer_video);//
+        ijkPlayerBt.setOnClickListener(this);
+        Button commonVideoBt = (Button) findViewById(R.id.common_video_bt);//ijkPlayer_video
         commonVideoBt.setOnClickListener(this);
+
         Button vrVideoBt = (Button) findViewById(R.id.vr_video_bt);
         vrVideoBt.setOnClickListener(this);
         //
@@ -37,6 +40,7 @@ public class IndexActivity extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.ijkPlayer_video:
             case R.id.common_video_bt://普通视频
                 //http://storage.googleapis.com/exoplayer-test-media-1/mkv/android-screens-lavf-56.36.100-aac-avc-main-1280x720.mkv
                 //http://demos.webmproject.org/exoplayer/glass_vp9_vorbis.webm

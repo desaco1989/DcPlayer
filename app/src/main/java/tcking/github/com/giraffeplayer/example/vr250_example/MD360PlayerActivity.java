@@ -172,7 +172,7 @@ public abstract class MD360PlayerActivity extends Activity {
                 .setClickHandler(new SpinnerHelper.ClickHandler() {
                     @Override
                     public void onSpinnerClicked(int index, int key, String value) {
-                        mVRLibrary.switchDisplayMode(MD360PlayerActivity.this, key);// 单眼Or双眼
+                        mVRLibrary.switchDisplayMode(MD360PlayerActivity.this, key);// TODO ,单眼Or双眼
                         int i = 0;
                         int size = key == MDVRLibrary.DISPLAY_MODE_GLASS ? 2 : 1;
                         for (View point : hotspotPoints){
