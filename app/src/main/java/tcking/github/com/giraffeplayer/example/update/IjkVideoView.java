@@ -42,10 +42,11 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-import tcking.github.com.giraffeplayer.IMediaController;
-import tcking.github.com.giraffeplayer.IRenderView;
-import tcking.github.com.giraffeplayer.SurfaceRenderView;
-import tcking.github.com.giraffeplayer.TextureRenderView;
+
+import tcking.github.com.giraffeplayer.example.vr_player.player_setting.IMediaController;
+import tcking.github.com.giraffeplayer.example.vr_player.player_setting.IRenderView;
+import tcking.github.com.giraffeplayer.example.vr_player.player_setting.SurfaceRenderView;
+import tcking.github.com.giraffeplayer.example.vr_player.player_setting.TextureRenderView;
 import tv.danmaku.ijk.media.player.AndroidMediaPlayer;
 import tv.danmaku.ijk.media.player.IMediaPlayer;
 import tv.danmaku.ijk.media.player.IjkMediaPlayer;

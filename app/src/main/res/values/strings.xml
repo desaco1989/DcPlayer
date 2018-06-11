@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">IjkVrPlayer</string>
+    <string name="app_name">DcIjkVrPlayer</string>
 
     <string name="small_problem">Player encountered a small problem</string>
     <string name="not_support">player not support this device</string>
