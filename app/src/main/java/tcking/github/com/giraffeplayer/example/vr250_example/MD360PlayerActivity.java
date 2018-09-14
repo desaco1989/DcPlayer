@@ -12,6 +12,7 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.util.SimpleArrayMap;
+import android.util.Log;
 import android.util.SparseArray;
 import android.view.View;
 import android.view.Window;
@@ -191,7 +192,7 @@ public abstract class MD360PlayerActivity extends Activity {
                     public void onSpinnerClicked(int index, int key, String value) {
 
                         mVRLibrary.switchInteractiveMode(MD360PlayerActivity.this, key);//TODO 是否支持手势
-                        LogUtil.e("desaco","key="+key);
+                        LogUtil.e("desaco","key="+key); // key=5 支持滑动和陀螺仪
                     }
                 })
                 .init(R.id.spinner_interactive);
@@ -203,6 +204,7 @@ public abstract class MD360PlayerActivity extends Activity {
                     @Override
                     public void onSpinnerClicked(int index, int key, String value) {
                         mVRLibrary.switchProjectionMode(MD360PlayerActivity.this, key);
+//                        Log.e("desaco","key="+key);
                     }
                 })
                 .init(R.id.spinner_projection);
